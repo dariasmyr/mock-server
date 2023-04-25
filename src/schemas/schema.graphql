@@ -1,0 +1,1 @@
+type Query { test: String, test2: Int, test3: Float, test4:Boolean }
