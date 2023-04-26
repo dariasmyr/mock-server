@@ -23,8 +23,7 @@ The Mock Server Tool for NestJS is a lightweight and autonomous tool that dynami
 
 ### Usage
 
-To use the Mock Module Tool for NestJS, follow these steps:
-
+For adding the Mock Server module to your project, follow these steps:
 1. Copy the `mock.module.ts` file into your project.
 2. Add the dynamic Mock Module to your app module and specify the path to the GraphQL data schemas.
 
@@ -42,8 +41,14 @@ To use the Mock Module Tool for NestJS, follow these steps:
    })
    export class AppModule {}
    ```
+   
+3. Run npm `run start:dev` and enter the GraphQL playground with an endpoint similar to the name of a corresponding schema file.
 
-3. Run the app and enter the GraphQL playground with an endpoint similar to the name of a corresponding schema file.
+For running the Mock Server as a standalone project:
+
+1. Fork and clone the repository to your local machine.
+2. Install dependencies by running `npm install`.
+3. Run the server by running `npm run start:dev`.
 
 ## Contributions
 
