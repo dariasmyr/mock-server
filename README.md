@@ -15,12 +15,6 @@ The Mock Server Tool for NestJS is a lightweight and autonomous tool that dynami
 - Node.js version 12.0 or higher
 - NestJS version 8.0 or higher
 
-### Installation
-
-1. Install the `mock.module.ts` file into your project.
-2. Add the dynamic Mock Module to your app module and specify the path to the GraphQL data schemas.
-3. Run the app and enter the GraphQL playground with an endpoint similar to the name of a corresponding schema file.
-
 ### Usage
 
 For adding the Mock Server module to your project, follow these steps:
