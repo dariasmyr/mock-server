@@ -32,6 +32,7 @@ export class MockModule {
         driver: ApolloDriver,
         schema: schemaWithMocks,
         playground: true,
+        introspection: true,
         path: `/${getFileNameWithoutExtension(file)}`,
       });
     });
