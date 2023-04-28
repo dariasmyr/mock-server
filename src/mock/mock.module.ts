@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from '@nestjs/common';
-import { GqlModuleOptions, GraphQLModule } from '@nestjs/graphql';
-import { ApolloDriver } from '@nestjs/apollo';
+import { GraphQLModule } from '@nestjs/graphql';
+import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { addMocksToSchema } from '@graphql-tools/mock';
 import * as fs from 'fs';
@@ -28,14 +28,12 @@ export class MockModule {
       const schema = makeExecutableSchema({ typeDefs });
       const schemaWithMocks = addMocksToSchema({ schema });
 
-      const options: GqlModuleOptions = {
+      return GraphQLModule.forRoot<ApolloDriverConfig>({
         driver: ApolloDriver,
-        typeDefs,
         schema: schemaWithMocks,
+        playground: true,
         path: `/${getFileNameWithoutExtension(file)}`,
-      };
-
-      return GraphQLModule.forRoot(options);
+      });
     });
 
     return {
