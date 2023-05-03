@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+docker-compose.yml
+Dockerfile
+dist/
+#.env # todo: change config library to support .env files
+data
