@@ -17,6 +17,9 @@ The Mock Server Tool for NestJS is a lightweight and autonomous tool that dynami
 - Node.js version 12.0 or higher
 - NestJS version 8.0 or higher
 
+### Docker-Compose
+To launch the project in a Docker container, run the command docker-compose up -d app
+
 ### Usage
 
 For adding the Mock Server module to your project, follow these steps:
