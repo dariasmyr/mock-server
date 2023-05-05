@@ -2,7 +2,7 @@
 
 ## Mock Server
 
-The Mock Server Tool for NestJS is a lightweight and autonomous tool that dynamically generates mock GraphQL servers based on GraphQL data schemas. It is designed to simplify the process of creating mock servers for development and testing purposes.
+The Mock Server is a lightweight and autonomous NestJS tool that dynamically generates mock GraphQL servers based on GraphQL data schemas. It is designed to simplify the process of creating mock servers for development and testing purposes.
 
 ## Features
 
